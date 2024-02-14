@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: none;
+}
+body{
+    font-family: monospace;
+}
+
+nav{
+    background: gold;
+    height: 80px;
+    width: 100%;
+    border: 2px solid maroon;
+    padding: 10px 20px; 
+    cursor: pointer; 
+    font-size: 16px; 
+}
+label.logo{
+    color: maroon;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+}
+nav ul li a{
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 3px solid maroon;
+    
+
+}
+a.about,a:hover{
+    background: gold;
+    transition: .5s;
+
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: gold;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+        
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+    @media(max-width: 858px){
+        .checkbtn{
+            display: block;
+        }
+        ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: gold;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+            
+        }
+        nav ul li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        nav ul li a{
+            font-size: 20px;
+        }
+        a:hover, a.about{
+            background: none;
+            color: gold;
+
+        }
+        #check:checked ~ ul{
+            left: 0;
+        }
+    }
+
+.one{
+    border: 3px solid maroon;
+    background-color: gold;
+    font-size: 30px;
+    color: black;
+    padding: 10px;
+    display: inline-block;
+}
+
+.center-border {
+    border: 2px solid maroon;
+    background-color: gold;
+    font-size: 30px;
+    padding: 10px;
+    width: 50%; 
+    margin: auto; 
+}
+
+.order{
+    color: black;
+}
+
+.gif{
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7c4954bf-7a87-490e-b188-f8a71f05f703/d4w7thx-ee07b196-9f59-4ca6-9c74-15b32b7cda54.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdjNDk1NGJmLTdhODctNDkwZS1iMTg4LWY4YTcxZjA1ZjcwM1wvZDR3N3RoeC1lZTA3YjE5Ni05ZjU5LTRjYTYtOWM3NC0xNWIzMmI3Y2RhNTQuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.uRyl7HVd2Q4OD2YYqIvFK_eJ91Jns7q9IyR_25qbcwk'); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    background-color: #fff; 
+}
+
+
